@@ -1,0 +1,44 @@
+{
+  "name": "le-bistro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "babel-node src/app.js",
+    "dev:watch": "nodemon -i node_modules -x npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevemc4/le-bistro.git"
+  },
+  "author": "Dhika Rizky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevemc4/le-bistro/issues"
+  },
+  "homepage": "https://github.com/stevemc4/le-bistro#readme",
+  "dependencies": {
+    "accepts": "^1.3.5",
+    "boom": "^7.3.0",
+    "chalk": "^2.4.2",
+    "dotenv": "^6.2.0",
+    "ejs": "^2.6.1",
+    "hapi": "^18.0.0",
+    "hapi-io": "^0.2.1",
+    "inert": "^5.1.2",
+    "joi": "^14.3.1",
+    "knex": "^0.16.3",
+    "moment-timezone": "^0.5.23",
+    "mysql2": "^1.6.4",
+    "postcss": "^7.0.14",
+    "socket.io": "^2.2.0",
+    "tailwindcss": "^0.7.4",
+    "vision": "^5.4.4",
+    "yar": "^9.1.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
