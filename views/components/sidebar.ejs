@@ -1,0 +1,11 @@
+<div class="h-screen w-64 bg-grey border-r border-grey-dark flex-no-shrink">
+    <img class="pt-6 pl-6 block" src="/static/img/logo.png"/>
+    <div class="mt-20">
+        <a class="sidebarItem <%=(page=='overview')? 'active' : ''%>" href="/">Beranda</a>
+        <a class="sidebarItem <%=(page=='menu')? 'active' : ''%>" href="/menu">Menu</a>
+        <a class="sidebarItem <%=(page=='employees')? 'active' : ''%>" href="/employees">Karyawan</a>
+        <a class="sidebarItem <%=(page=='customers')? 'active' : ''%>" href="/customers">Pelanggan</a>
+        <a class="sidebarItem <%=(page=='transactions')? 'active' : ''%>" href="/transactions">Transaksi</a>
+        <a class="sidebarItem <%=(page=='history')? 'active' : ''%>" href="/history">Riwayat</a>
+    </div>
+</div>

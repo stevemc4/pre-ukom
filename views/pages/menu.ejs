@@ -1,0 +1,33 @@
+<div>
+    <%- include('../components/header')%>
+    <div class="flex items-center mt-16">
+        <h1 class="font-light flex-grow">Menu</h1>
+        <a class="text-branding no-underline" href="#">Tambah Menu</a>
+    </div>
+    <div class="mt-8">
+        <span class="font-light text-2xl text-grey-darkest block">Hidangan Utama</span>
+        <ul class="flex flex-wrap list-reset">
+            <%for(let i = 0; i < 10; i++){%>
+                <%- include('../components/menuItem')%>
+            <%}%>
+        </ul>
+        <span class="font-light text-2xl text-grey-darkest mt-8 block">Minuman</span>
+        <ul class="flex flex-wrap list-reset">
+            <%for(let i = 0; i < 10; i++){%>
+                <%- include('../components/menuItem')%>
+            <%}%>
+        </ul>
+        <span class="font-light text-2xl text-grey-darkest mt-8 block">Hidangan Penutup</span>
+        <ul class="flex flex-wrap list-reset">
+            <%for(let i = 0; i < 10; i++){%>
+                <%- include('../components/menuItem')%>
+            <%}%>
+        </ul>
+        <span class="font-light text-2xl text-grey-darkest mt-8 block">Camilan</span>
+        <ul class="flex flex-wrap list-reset">
+            <%for(let i = 0; i < 10; i++){%>
+                <%- include('../components/menuItem')%>
+            <%}%>
+        </ul>
+    </div>
+</div>

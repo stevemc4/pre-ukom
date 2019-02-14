@@ -8,6 +8,13 @@
     <title>Document</title>
 </head>
 <body class="font-sans">
-    Hello World
+    <div class="flex">
+        <% if(locals.noSidebar == undefined || (locals.noSidebar != undefined && locals.noSidebar == false)){%>
+        <%- include('components/sidebar')%>
+        <%}%>
+        <div class="px-6 py-8 flex-grow overflow-y-auto max-h-screen">
+            <%- include('pages/' + page)%>
+        </div>
+    </div>
 </body>
 </html>

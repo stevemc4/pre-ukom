@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/styles/main.css"/>
+    <title>Login - Le Bistro</title>
+</head>
+<body class="font-sans bg-grey-dark">
+    <div class="flex items-center w-screen h-screen justify-center">
+        <div class="px-6 py-8 bg-white">
+            <div class="flex items-center">
+                <img src="/static/img/logo.png"/>
+                <span class="flex-grow text-lg text-right">Login</span>
+            </div>
+            <form class="mt-8" action="/api/auth/login" method="POST">
+                <input class="w-full p-4 border border-grey-darkest mb-2 rounded" type="text" placeholder="Username" name="username" required/>
+                <input class="w-full p-4 border border-grey-darkest mb-2 rounded" type="password" placeholder="Password" name="password" required/>
+                <div class="flex items-center mt-4">
+                    <a class="flex-grow font-bold text-branding no-underline" href="/register">Daftar</a>
+                    <input class="px-4 py-2 bg-branding text-white cursor-pointer" type="submit" value="Login"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
